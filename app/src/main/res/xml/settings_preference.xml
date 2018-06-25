@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="비밀번호 설정">
+        <SwitchPreference
+            android:key="is_password"
+            android:title="비밀번호 사용"
+            android:summary="재실행시 적용됩니다."
+            />
+        <PreferenceScreen
+            android:key="password"
+            android:title="비밀번호"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="백업/복구">
+        <PreferenceScreen
+            android:key="backup"
+            android:title="백업"
+            android:summary="내부 저장 공간에 백업됩니다."
+            />
+        <PreferenceScreen
+            android:key="recovery"
+            android:title="복구"
+            android:summary="복구시 추억 일기장에 재시작됩니다."
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
